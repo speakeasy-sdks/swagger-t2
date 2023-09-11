@@ -28,7 +28,7 @@ sdk.projects.updateProject({
     name: "The Name of the customer.",
     thumb: "The Avatar of the customer.",
   },
-  id: 592845,
+  id: 715190,
 }).then((res: UpdateProjectResponse) => {
   if (res.statusCode == 200) {
     // handle response

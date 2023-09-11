@@ -3,6 +3,7 @@
  */
 
 import * as utils from "../internal/utils";
+import { Customers } from "./customers";
 import { Projects } from "./projects";
 import axios from "axios";
 import { AxiosInstance } from "axios";
@@ -47,7 +48,7 @@ export class SDKConfiguration {
     serverDefaults: any;
     language = "typescript";
     openapiDocVersion = "1.0.0";
-    sdkVersion = "0.1.0";
+    sdkVersion = "0.1.1";
     genVersion = "2.107.3";
     retryConfig?: utils.RetryConfig;
     public constructor(init?: Partial<SDKConfiguration>) {
@@ -59,6 +60,7 @@ export class SDKConfiguration {
  * Laravel OpenApi Demo Documentation: L5 Swagger OpenApi description
  */
 export class SwaggerT2 {
+    public customers: Customers;
     /**
      * API Endpoints of Projects
      */
@@ -81,6 +83,7 @@ export class SwaggerT2 {
             retryConfig: props?.retryConfig,
         });
 
+        this.customers = new Customers(this.sdkConfiguration);
         this.projects = new Projects(this.sdkConfiguration);
     }
 }

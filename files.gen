@@ -1,3 +1,4 @@
+src/sdk/customers.ts
 src/sdk/projects.ts
 src/sdk/sdk.ts
 .eslintrc.yml
@@ -19,12 +20,20 @@ src/sdk/models/errors/sdkerror.ts
 src/sdk/types/index.ts
 src/sdk/types/rfcdate.ts
 tsconfig.json
+src/sdk/models/operations/newcustomer.ts
 src/sdk/models/operations/updateproject.ts
 src/sdk/models/operations/index.ts
 src/sdk/models/errors/index.ts
 docs/sdks/swaggert2/README.md
+docs/sdks/customers/README.md
 docs/sdks/projects/README.md
 USAGE.md
+docs/models/operations/newcustomerrequestbodymetadata.md
+docs/models/operations/newcustomerrequestbody.md
+docs/models/operations/newcustomerrequest.md
+docs/models/operations/newcustomer200applicationjsonmetadata.md
+docs/models/operations/newcustomer200applicationjson.md
+docs/models/operations/newcustomerresponse.md
 docs/models/operations/updateprojectrequestbodymetadata.md
 docs/models/operations/updateprojectrequestbody.md
 docs/models/operations/updateprojectrequest.md

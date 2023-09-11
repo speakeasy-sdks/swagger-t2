@@ -28,11 +28,11 @@ yarn add https://github.com/speakeasy-sdks/swagger-t2
 
 ```typescript
 import { SwaggerT2 } from "swagger-t2";
-import { UpdateProjectResponse } from "swagger-t2/dist/sdk/models/operations";
+import { NewCustomerResponse } from "swagger-t2/dist/sdk/models/operations";
 
 const sdk = new SwaggerT2();
 
-sdk.projects.updateProject({
+sdk.customers.newCustomer({
   requestBody: {
     customIdentifier: "The Custom Identifier of the customer in the organization",
     email: "The Email of the customer.",
@@ -40,8 +40,8 @@ sdk.projects.updateProject({
     name: "The Name of the customer.",
     thumb: "The Avatar of the customer.",
   },
-  id: 548814,
-}).then((res: UpdateProjectResponse) => {
+  project: 548814,
+}).then((res: NewCustomerResponse) => {
   if (res.statusCode == 200) {
     // handle response
   }
@@ -52,6 +52,10 @@ sdk.projects.updateProject({
 <!-- Start SDK Available Operations -->
 ## Available Resources and Operations
 
+
+### [customers](docs/sdks/customers/README.md)
+
+* [newCustomer](docs/sdks/customers/README.md#newcustomer) - New Customer
 
 ### [projects](docs/sdks/projects/README.md)
 
