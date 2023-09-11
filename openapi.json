@@ -19,6 +19,147 @@
         }
     ],
     "paths": {
+        "/projects/{project}/customers": {
+            "post": {
+                "tags": [
+                    "Customers"
+                ],
+                "summary": "New Customer",
+                "description": "Add a new customer to the project",
+                "operationId": "newCustomer",
+                "parameters": [
+                    {
+                        "name": "project",
+                        "in": "path",
+                        "description": "Project id",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "Authorization",
+                        "in": "header",
+                        "description": "Token",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "required": [
+                                    "title",
+                                    "content",
+                                    "status"
+                                ],
+                                "properties": {
+                                    "name": {
+                                        "type": "string",
+                                        "format": "string",
+                                        "example": "The Name of the customer."
+                                    },
+                                    "email": {
+                                        "type": "string",
+                                        "format": "string",
+                                        "example": "The Email of the customer."
+                                    },
+                                    "thumb": {
+                                        "type": "string",
+                                        "format": "string",
+                                        "example": "The Avatar of the customer."
+                                    },
+                                    "custom_identifier": {
+                                        "type": "string",
+                                        "format": "string",
+                                        "example": "The Custom Identifier of the customer in the organization"
+                                    },
+                                    "metadata": {
+                                        "type": "object",
+                                        "format": "string",
+                                        "example": "The Metadata Information."
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Successful operation",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "required": [
+                                        "title",
+                                        "content",
+                                        "status"
+                                    ],
+                                    "properties": {
+                                        "name": {
+                                            "type": "string",
+                                            "format": "string",
+                                            "example": "The Name of the customer."
+                                        },
+                                        "email": {
+                                            "type": "string",
+                                            "format": "string",
+                                            "example": "The Email of the customer."
+                                        },
+                                        "thumb": {
+                                            "type": "string",
+                                            "format": "string",
+                                            "example": "The Avatar of the customer."
+                                        },
+                                        "wallet_connection": {
+                                            "type": "string",
+                                            "format": "string",
+                                            "example": "The wallet connection type of the customer"
+                                        },
+                                        "address": {
+                                            "type": "string",
+                                            "format": "string",
+                                            "example": "The wallet Address of the customer."
+                                        },
+                                        "custom_identifier": {
+                                            "type": "string",
+                                            "format": "string",
+                                            "example": "The Custom Identifier of the customer in the organization"
+                                        },
+                                        "metadata": {
+                                            "type": "object",
+                                            "format": "string",
+                                            "example": "The Metadata Information."
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "202": {
+                        "description": "Successful operation"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    },
+                    "404": {
+                        "description": "Resource Not Found"
+                    }
+                }
+            }
+        },
         "/projects/{id}": {
             "put": {
                 "tags": [
