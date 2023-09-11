@@ -24,7 +24,8 @@ sdk.customers.newCustomer({
     name: "The Name of the customer.",
     thumb: "The Avatar of the customer.",
   },
-  project: 592845,
+  token: "distinctio",
+  projectId: 844266,
 }).then((res: NewCustomerResponse) => {
   if (res.statusCode == 200) {
     // handle response

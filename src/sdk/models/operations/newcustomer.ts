@@ -36,10 +36,16 @@ export class NewCustomerRequest extends SpeakeasyBase {
     requestBody: NewCustomerRequestBody;
 
     /**
+     * Token
+     */
+    @SpeakeasyMetadata({ data: "header, style=simple;explode=false;name=Token" })
+    token: string;
+
+    /**
      * Project id
      */
-    @SpeakeasyMetadata({ data: "pathParam, style=simple;explode=false;name=project" })
-    project: number;
+    @SpeakeasyMetadata({ data: "pathParam, style=simple;explode=false;name=project_id" })
+    projectId: number;
 }
 
 export class NewCustomer200ApplicationJSONMetadata extends SpeakeasyBase {}

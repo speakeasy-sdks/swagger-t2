@@ -33,7 +33,7 @@ export class Customers {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = utils.generateURL(baseURL, "/projects/{project}/customers", req);
+        const url: string = utils.generateURL(baseURL, "/projects/{project_id}/customers", req);
 
         let [reqBodyHeaders, reqBody]: [object, any] = [{}, {}];
 
