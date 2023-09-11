@@ -19,7 +19,7 @@
         }
     ],
     "paths": {
-        "/projects/{project}/customers": {
+        "/projects/{project_id}/customers": {
             "post": {
                 "tags": [
                     "Customers"
@@ -29,7 +29,7 @@
                 "operationId": "newCustomer",
                 "parameters": [
                     {
-                        "name": "project",
+                        "name": "project_id",
                         "in": "path",
                         "description": "Project id",
                         "required": true,
@@ -39,6 +39,15 @@
                     },
                     {
                         "name": "Authorization",
+                        "in": "header",
+                        "description": "Token",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "Token",
                         "in": "header",
                         "description": "Token",
                         "required": true,
