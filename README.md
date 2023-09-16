@@ -54,11 +54,11 @@ sdk.customers.newCustomer({
 ## Available Resources and Operations
 
 
-### [customers](docs/sdks/customers/README.md)
+### [Customers](docs/sdks/customers/README.md)
 
 * [newCustomer](docs/sdks/customers/README.md#newcustomer) - New Customer
 
-### [projects](docs/sdks/projects/README.md)
+### [Projects](docs/sdks/projects/README.md)
 
 * [updateProject](docs/sdks/projects/README.md#updateproject) - Update existing project
 <!-- End SDK Available Operations -->

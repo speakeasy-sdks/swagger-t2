@@ -1,4 +1,4 @@
-# customers
+# Customers
 
 ### Available Operations
 
