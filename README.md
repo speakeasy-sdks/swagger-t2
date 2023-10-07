@@ -26,25 +26,26 @@ yarn add https://github.com/speakeasy-sdks/swagger-t2
 <!-- Start SDK Example Usage -->
 ```typescript
 import { SwaggerT2 } from "swagger-t2";
-import { NewCustomerResponse } from "swagger-t2/dist/sdk/models/operations";
 
-const sdk = new SwaggerT2();
+(async() => {
+  const sdk = new SwaggerT2();
 
-sdk.customers.newCustomer({
-  requestBody: {
-    customIdentifier: "The Custom Identifier of the customer in the organization",
-    email: "The Email of the customer.",
-    metadata: {},
-    name: "The Name of the customer.",
-    thumb: "The Avatar of the customer.",
-  },
-  token: "Branding",
-  projectId: 5910,
-}).then((res: NewCustomerResponse) => {
+  const res = await sdk.customers.newCustomer({
+    requestBody: {
+      customIdentifier: "The Custom Identifier of the customer in the organization",
+      email: "The Email of the customer.",
+      metadata: {},
+      name: "The Name of the customer.",
+      thumb: "The Avatar of the customer.",
+    },
+    token: "Branding",
+    projectId: 5910,
+  });
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 <!-- End SDK Example Usage -->
 
