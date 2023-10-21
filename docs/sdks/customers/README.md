@@ -25,8 +25,8 @@ import { SwaggerT2 } from "swagger-t2";
       name: "The Name of the customer.",
       thumb: "The Avatar of the customer.",
     },
-    token: "Branding",
-    projectId: 5910,
+    token: "string",
+    projectId: 182571,
   });
 
   if (res.statusCode == 200) {
