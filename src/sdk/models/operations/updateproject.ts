@@ -6,7 +6,7 @@ import { SpeakeasyBase, SpeakeasyMetadata } from "../../../internal/utils";
 import { AxiosResponse } from "axios";
 import { Expose, Type } from "class-transformer";
 
-export class UpdateProjectRequestBodyMetadata extends SpeakeasyBase {}
+export class UpdateProjectMetadata extends SpeakeasyBase {}
 
 export class UpdateProjectRequestBody extends SpeakeasyBase {
     @SpeakeasyMetadata()
@@ -19,8 +19,8 @@ export class UpdateProjectRequestBody extends SpeakeasyBase {
 
     @SpeakeasyMetadata()
     @Expose({ name: "metadata" })
-    @Type(() => UpdateProjectRequestBodyMetadata)
-    metadata?: UpdateProjectRequestBodyMetadata;
+    @Type(() => UpdateProjectMetadata)
+    metadata?: UpdateProjectMetadata;
 
     @SpeakeasyMetadata()
     @Expose({ name: "name" })
@@ -42,12 +42,12 @@ export class UpdateProjectRequest extends SpeakeasyBase {
     id: number;
 }
 
-export class UpdateProject200ApplicationJSONMetadata extends SpeakeasyBase {}
+export class UpdateProjectProjectsMetadata extends SpeakeasyBase {}
 
 /**
  * Successful operation
  */
-export class UpdateProject200ApplicationJSON extends SpeakeasyBase {
+export class UpdateProjectResponseBody extends SpeakeasyBase {
     @SpeakeasyMetadata()
     @Expose({ name: "address" })
     address?: string;
@@ -62,8 +62,8 @@ export class UpdateProject200ApplicationJSON extends SpeakeasyBase {
 
     @SpeakeasyMetadata()
     @Expose({ name: "metadata" })
-    @Type(() => UpdateProject200ApplicationJSONMetadata)
-    metadata?: UpdateProject200ApplicationJSONMetadata;
+    @Type(() => UpdateProjectProjectsMetadata)
+    metadata?: UpdateProjectProjectsMetadata;
 
     @SpeakeasyMetadata()
     @Expose({ name: "name" })
@@ -101,5 +101,5 @@ export class UpdateProjectResponse extends SpeakeasyBase {
      * Successful operation
      */
     @SpeakeasyMetadata()
-    updateProject200ApplicationJSONObject?: UpdateProject200ApplicationJSON;
+    object?: UpdateProjectResponseBody;
 }

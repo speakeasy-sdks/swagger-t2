@@ -6,7 +6,7 @@ import { SpeakeasyBase, SpeakeasyMetadata } from "../../../internal/utils";
 import { AxiosResponse } from "axios";
 import { Expose, Type } from "class-transformer";
 
-export class NewCustomerRequestBodyMetadata extends SpeakeasyBase {}
+export class Metadata extends SpeakeasyBase {}
 
 export class NewCustomerRequestBody extends SpeakeasyBase {
     @SpeakeasyMetadata()
@@ -19,8 +19,8 @@ export class NewCustomerRequestBody extends SpeakeasyBase {
 
     @SpeakeasyMetadata()
     @Expose({ name: "metadata" })
-    @Type(() => NewCustomerRequestBodyMetadata)
-    metadata?: NewCustomerRequestBodyMetadata;
+    @Type(() => Metadata)
+    metadata?: Metadata;
 
     @SpeakeasyMetadata()
     @Expose({ name: "name" })
@@ -48,12 +48,12 @@ export class NewCustomerRequest extends SpeakeasyBase {
     projectId: number;
 }
 
-export class NewCustomer200ApplicationJSONMetadata extends SpeakeasyBase {}
+export class NewCustomerMetadata extends SpeakeasyBase {}
 
 /**
  * Successful operation
  */
-export class NewCustomer200ApplicationJSON extends SpeakeasyBase {
+export class NewCustomerResponseBody extends SpeakeasyBase {
     @SpeakeasyMetadata()
     @Expose({ name: "address" })
     address?: string;
@@ -68,8 +68,8 @@ export class NewCustomer200ApplicationJSON extends SpeakeasyBase {
 
     @SpeakeasyMetadata()
     @Expose({ name: "metadata" })
-    @Type(() => NewCustomer200ApplicationJSONMetadata)
-    metadata?: NewCustomer200ApplicationJSONMetadata;
+    @Type(() => NewCustomerMetadata)
+    metadata?: NewCustomerMetadata;
 
     @SpeakeasyMetadata()
     @Expose({ name: "name" })
@@ -107,5 +107,5 @@ export class NewCustomerResponse extends SpeakeasyBase {
      * Successful operation
      */
     @SpeakeasyMetadata()
-    newCustomer200ApplicationJSONObject?: NewCustomer200ApplicationJSON;
+    object?: NewCustomerResponseBody;
 }

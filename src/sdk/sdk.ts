@@ -48,9 +48,9 @@ export class SDKConfiguration {
     serverDefaults: any;
     language = "typescript";
     openapiDocVersion = "1.0.0";
-    sdkVersion = "0.6.0";
-    genVersion = "2.171.0";
-    userAgent = "speakeasy-sdk/typescript 0.6.0 2.171.0 1.0.0 swagger-t2";
+    sdkVersion = "0.7.0";
+    genVersion = "2.181.1";
+    userAgent = "speakeasy-sdk/typescript 0.7.0 2.181.1 1.0.0 swagger-t2";
     retryConfig?: utils.RetryConfig;
     public constructor(init?: Partial<SDKConfiguration>) {
         Object.assign(this, init);
@@ -61,11 +61,11 @@ export class SDKConfiguration {
  * Laravel OpenApi Demo Documentation: L5 Swagger OpenApi description
  */
 export class SwaggerT2 {
-    public customers: Customers;
     /**
      * API Endpoints of Projects
      */
     public projects: Projects;
+    public customers: Customers;
 
     private sdkConfiguration: SDKConfiguration;
 
@@ -84,7 +84,7 @@ export class SwaggerT2 {
             retryConfig: props?.retryConfig,
         });
 
-        this.customers = new Customers(this.sdkConfiguration);
         this.projects = new Projects(this.sdkConfiguration);
+        this.customers = new Customers(this.sdkConfiguration);
     }
 }

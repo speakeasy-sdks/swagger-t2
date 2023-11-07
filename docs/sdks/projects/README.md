@@ -1,5 +1,5 @@
 # Projects
-(*projects*)
+(*.projects*)
 
 ## Overview
 
@@ -31,6 +31,7 @@ import { SwaggerT2 } from "swagger-t2";
     },
     id: 648223,
   });
+
 
   if (res.statusCode == 200) {
     // handle response

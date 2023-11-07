@@ -1,5 +1,5 @@
 # Customers
-(*customers*)
+(*.customers*)
 
 ### Available Operations
 
@@ -28,6 +28,7 @@ import { SwaggerT2 } from "swagger-t2";
     token: "string",
     projectId: 182571,
   });
+
 
   if (res.statusCode == 200) {
     // handle response

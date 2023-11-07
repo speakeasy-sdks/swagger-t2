@@ -3,8 +3,8 @@
  */
 
 import * as utils from "../internal/utils";
-import * as errors from "./models/errors";
-import * as operations from "./models/operations";
+import * as errors from "../sdk/models/errors";
+import * as operations from "../sdk/models/operations";
 import { SDKConfiguration } from "./sdk";
 import { AxiosInstance, AxiosRequestConfig, AxiosResponse, RawAxiosRequestHeaders } from "axios";
 
@@ -84,9 +84,9 @@ export class Projects {
         switch (true) {
             case httpRes?.status == 200:
                 if (utils.matchContentType(contentType, `application/json`)) {
-                    res.updateProject200ApplicationJSONObject = utils.objectToClass(
+                    res.object = utils.objectToClass(
                         JSON.parse(decodedRes),
-                        operations.UpdateProject200ApplicationJSON
+                        operations.UpdateProjectResponseBody
                     );
                 } else {
                     throw new errors.SDKError(

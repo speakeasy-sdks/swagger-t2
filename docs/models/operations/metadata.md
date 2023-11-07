@@ -1,4 +1,4 @@
-# NewCustomerRequestBodyMetadata
+# Metadata
 
 
 ## Fields

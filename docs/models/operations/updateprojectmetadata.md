@@ -1,4 +1,4 @@
-# UpdateProjectRequestBodyMetadata
+# UpdateProjectMetadata
 
 
 ## Fields
