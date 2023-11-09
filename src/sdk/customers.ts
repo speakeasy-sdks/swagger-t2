@@ -33,7 +33,11 @@ export class Customers {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = utils.generateURL(baseURL, "/projects/{project_id}/customers", req);
+        const operationUrl: string = utils.generateURL(
+            baseURL,
+            "/projects/{project_id}/customers",
+            req
+        );
 
         let [reqBodyHeaders, reqBody]: [object, any] = [{}, null];
 
@@ -57,7 +61,7 @@ export class Customers {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "post",
             headers: headers,
             responseType: "arraybuffer",

@@ -1,6 +1,6 @@
 {
   "name": "swagger-t2",
-  "version": "0.7.0",
+  "version": "0.7.1",
   "author": "L-Test",
   "scripts": {
     "prepare": "tsc --build",

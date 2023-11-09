@@ -53,11 +53,11 @@ import { SwaggerT2 } from "swagger-t2";
 ## Available Resources and Operations
 
 
-### [.projects](docs/sdks/projects/README.md)
+### [projects](docs/sdks/projects/README.md)
 
 * [updateProject](docs/sdks/projects/README.md#updateproject) - Update existing project
 
-### [.customers](docs/sdks/customers/README.md)
+### [customers](docs/sdks/customers/README.md)
 
 * [newCustomer](docs/sdks/customers/README.md#newcustomer) - New Customer
 <!-- End SDK Available Operations -->
@@ -85,9 +85,41 @@ Here's an example of one such pagination call:
 <!-- Start Error Handling -->
 # Error Handling
 
-Handling errors in your SDK should largely match your expectations.  All operations return a response object or throw an error.  If Error objects are specified in your OpenAPI Spec, the SDK will throw the appropriate Error type.
+Handling errors in this SDK should largely match your expectations.  All operations return a response object or throw an error.  If Error objects are specified in your OpenAPI Spec, the SDK will throw the appropriate Error type.
+
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 
+## Example
+
+```typescript
+import { SwaggerT2 } from "swagger-t2";
+
+(async () => {
+    const sdk = new SwaggerT2();
+
+    let res;
+    try {
+        res = await sdk.projects.updateProject({
+            requestBody: {
+                customIdentifier: "The Custom Identifier of the customer in the organization",
+                email: "The Email of the customer.",
+                metadata: {},
+                name: "The Name of the customer.",
+                thumb: "The Avatar of the customer.",
+            },
+            id: 648223,
+        });
+    } catch (e) {}
+
+    if (res.statusCode == 200) {
+        // handle response
+    }
+})();
+
+```
 <!-- End Error Handling -->
 
 
@@ -184,8 +216,6 @@ const httpClient = axios.create({
 
 const sdk = new SwaggerT2({defaultClient: httpClient});
 ```
-
-
 <!-- End Custom HTTP Client -->
 
 <!-- Placeholder for Future Speakeasy SDK Sections -->

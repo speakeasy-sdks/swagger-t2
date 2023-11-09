@@ -1,0 +1,12 @@
+# NewCustomerRequestBody
+
+
+## Fields
+
+| Field                                                             | Type                                                              | Required                                                          | Description                                                       | Example                                                           |
+| ----------------------------------------------------------------- | ----------------------------------------------------------------- | ----------------------------------------------------------------- | ----------------------------------------------------------------- | ----------------------------------------------------------------- |
+| `customIdentifier`                                                | *string*                                                          | :heavy_minus_sign:                                                | N/A                                                               | The Custom Identifier of the customer in the organization         |
+| `email`                                                           | *string*                                                          | :heavy_minus_sign:                                                | N/A                                                               | The Email of the customer.                                        |
+| `metadata`                                                        | [operations.Metadata](../../../sdk/models/operations/metadata.md) | :heavy_minus_sign:                                                | N/A                                                               |                                                                   |
+| `name`                                                            | *string*                                                          | :heavy_minus_sign:                                                | N/A                                                               | The Name of the customer.                                         |
+| `thumb`                                                           | *string*                                                          | :heavy_minus_sign:                                                | N/A                                                               | The Avatar of the customer.                                       |
