@@ -2,18 +2,20 @@ configVersion: 1.0.0
 management:
   docChecksum: cd959610737959b3e4690509466f28b0
   docVersion: 1.0.0
-  speakeasyVersion: 1.116.0
-  generationVersion: 2.185.0
+  speakeasyVersion: 1.118.3
+  generationVersion: 2.187.7
 generation:
   comments: {}
   sdkClassName: Swagger-T2
   repoURL: https://github.com/speakeasy-sdks/swagger-t2.git
+  usageSnippets:
+    optionalPropertyRendering: withExample
 features:
   typescript:
-    core: 3.1.2
+    core: 3.1.3
     globalServerURLs: 2.82.0
 typescript:
-  version: 0.7.1
+  version: 0.7.2
   author: L-Test
   clientServerStatusCodesAsErrors: true
   flattenGlobalSecurity: true
