@@ -14,7 +14,7 @@ Add a new customer to the project
 ```typescript
 import { SwaggerT2 } from "swagger-t2";
 
-(async() => {
+async function run() {
   const sdk = new SwaggerT2();
 
   const res = await sdk.customers.newCustomer({
@@ -32,7 +32,9 @@ import { SwaggerT2 } from "swagger-t2";
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters

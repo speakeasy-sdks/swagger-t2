@@ -1,8 +1,8 @@
-<!-- Start SDK Example Usage -->
+<!-- Start SDK Example Usage [usage] -->
 ```typescript
 import { SwaggerT2 } from "swagger-t2";
 
-(async () => {
+async function run() {
     const sdk = new SwaggerT2();
 
     const res = await sdk.projects.updateProject({
@@ -19,7 +19,9 @@ import { SwaggerT2 } from "swagger-t2";
     if (res.statusCode == 200) {
         // handle response
     }
-})();
+}
+
+run();
 
 ```
-<!-- End SDK Example Usage -->
+<!-- End SDK Example Usage [usage] -->

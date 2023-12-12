@@ -24,7 +24,6 @@ src/sdk/models/operations/updateproject.ts
 src/sdk/models/operations/newcustomer.ts
 src/sdk/models/errors/index.ts
 src/sdk/models/operations/index.ts
-USAGE.md
 docs/sdk/models/operations/updateprojectmetadata.md
 docs/sdk/models/operations/updateprojectrequestbody.md
 docs/sdk/models/operations/updateprojectrequest.md
@@ -40,4 +39,5 @@ docs/sdk/models/operations/newcustomerresponse.md
 docs/sdks/swaggert2/README.md
 docs/sdks/projects/README.md
 docs/sdks/customers/README.md
+USAGE.md
 .gitattributes
