@@ -1,0 +1,60 @@
+lockVersion: 2.0.0
+id: 59bc4d44-479d-4783-9ec8-cb944e00d455
+management:
+  docChecksum: cd959610737959b3e4690509466f28b0
+  docVersion: 1.0.0
+  speakeasyVersion: internal
+  generationVersion: 2.225.2
+  releaseVersion: 0.8.1
+  configChecksum: 16f7e42dcb09a8e28bd55329ae7832ba
+  repoURL: https://github.com/speakeasy-sdks/swagger-t2.git
+  repoSubDirectory: .
+  installationURL: https://github.com/speakeasy-sdks/swagger-t2
+features:
+  typescript:
+    core: 3.4.1
+    globalServerURLs: 2.82.1
+generatedFiles:
+  - src/sdk/projects.ts
+  - src/sdk/customers.ts
+  - src/sdk/sdk.ts
+  - .eslintrc.yml
+  - jest.config.js
+  - package-lock.json
+  - package.json
+  - src/index.ts
+  - src/internal/utils/contenttype.ts
+  - src/internal/utils/headers.ts
+  - src/internal/utils/index.ts
+  - src/internal/utils/pathparams.ts
+  - src/internal/utils/queryparams.ts
+  - src/internal/utils/requestbody.ts
+  - src/internal/utils/retries.ts
+  - src/internal/utils/security.ts
+  - src/internal/utils/utils.ts
+  - src/sdk/index.ts
+  - src/sdk/models/errors/sdkerror.ts
+  - src/sdk/types/index.ts
+  - src/sdk/types/rfcdate.ts
+  - tsconfig.json
+  - src/sdk/models/operations/updateproject.ts
+  - src/sdk/models/operations/newcustomer.ts
+  - src/sdk/models/errors/index.ts
+  - src/sdk/models/operations/index.ts
+  - docs/sdk/models/operations/updateprojectmetadata.md
+  - docs/sdk/models/operations/updateprojectrequestbody.md
+  - docs/sdk/models/operations/updateprojectrequest.md
+  - docs/sdk/models/operations/updateprojectprojectsmetadata.md
+  - docs/sdk/models/operations/updateprojectresponsebody.md
+  - docs/sdk/models/operations/updateprojectresponse.md
+  - docs/sdk/models/operations/metadata.md
+  - docs/sdk/models/operations/newcustomerrequestbody.md
+  - docs/sdk/models/operations/newcustomerrequest.md
+  - docs/sdk/models/operations/newcustomermetadata.md
+  - docs/sdk/models/operations/newcustomerresponsebody.md
+  - docs/sdk/models/operations/newcustomerresponse.md
+  - docs/sdks/swaggert2/README.md
+  - docs/sdks/projects/README.md
+  - docs/sdks/customers/README.md
+  - USAGE.md
+  - .gitattributes
