@@ -25,7 +25,7 @@ async function run() {
       name: "The Name of the customer.",
       thumb: "The Avatar of the customer.",
     },
-    token: "string",
+    token: "<value>",
     projectId: 182571,
   });
 
