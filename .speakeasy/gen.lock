@@ -3,17 +3,17 @@ id: 59bc4d44-479d-4783-9ec8-cb944e00d455
 management:
   docChecksum: cd959610737959b3e4690509466f28b0
   docVersion: 1.0.0
-  speakeasyVersion: internal
-  generationVersion: 2.258.2
-  releaseVersion: 0.8.3
-  configChecksum: 726fbc7b71aa9dd1fca7f3661d43a7fc
+  speakeasyVersion: 1.207.1
+  generationVersion: 2.280.6
+  releaseVersion: 0.8.4
+  configChecksum: ceb14f1dc6123d1427795b5d404ca0e9
   repoURL: https://github.com/speakeasy-sdks/swagger-t2.git
   repoSubDirectory: .
   installationURL: https://github.com/speakeasy-sdks/swagger-t2
 features:
   typescript:
-    core: 3.4.7
-    globalServerURLs: 2.82.1
+    core: 3.4.8
+    globalServerURLs: 2.82.2
 generatedFiles:
   - src/sdk/projects.ts
   - src/sdk/customers.ts
